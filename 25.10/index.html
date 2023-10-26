@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displey Inline e Block</title>
+    
+    <style>
+        div, span, a{
+            outline: 1px solid black;
+
+        }
+        div{
+            display: inline-block;
+            margin-top: 20px;
+            width: 100px;
+            height: 60px;
+            
+        }
+        span{
+            /*margin-top: 10px;  ==>display: inline esse nao deixa mudar fica um lado do outro */
+            display: inline-block; /* tem que ter atençao pq ele deixa fora das tabelinhas*/
+            margin-top: 10px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div>
+        <span>Texto 1</span>
+        <span>Texto 2</span>
+        <span>Texto 3</span>
+    </div>
+    <div>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+    
+</body>
+</html>
